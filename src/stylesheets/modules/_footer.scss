@@ -1,0 +1,21 @@
+footer{
+    height: 78px;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    
+    @include Small{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    @include Medium{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    @include Large{
+        justify-content: center;
+        margin-top: 40px;
+    }
+}

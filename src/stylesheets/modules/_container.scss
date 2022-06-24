@@ -1,0 +1,47 @@
+.container{
+    background-color: $violeta;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    @include Small{
+        height: max-content;
+    }
+    @include Medium{
+        height: max-content;
+    }
+    @include Large{
+        height: max-content;
+    }
+    
+
+
+    &__inner{
+       background-image: url("../assets/bg-desktop.svg");
+       background-repeat: no-repeat;
+       padding-left: 5%;
+       padding-right: 5%;
+        // height: 100%;
+    //    @include Small{
+    //     background-image: url('../assets/bg-desktop.svg');
+    //     transform: rotate(90deg)
+    //    }
+    }
+    &__background{
+        width: 100%;
+        background-image: url("../assets/bg-desktop.svg");
+        height: 100%;
+        background-repeat: no-repeat;
+        
+       
+       
+       @include Small{
+            
+            background-image: url('../assets/bg-desktop.svg');     
+            transform: translateY(100px);      
+            transform: rotate(-90deg);
+            
+           }
+    }
+    
+}

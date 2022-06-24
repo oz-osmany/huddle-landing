@@ -1,0 +1,94 @@
+.principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 85px;
+    width: 100%;
+    @include Small{
+        flex-direction: column;
+        margin-top: 55px;
+    }
+    @include Medium{
+        flex-direction: column;
+    }
+    @include Large{
+        flex-direction: column;
+        align-items: center;
+    }
+    &__info{
+        margin-left: 5%;
+        margin-top: 35px;
+        width: 35%;
+        word-wrap: break-word;
+    @include Small{
+            align-items: center;
+            text-align: center;
+    }
+    @include Medium{
+        align-items: center;
+        text-align: center;
+    }
+    @include Large{
+        align-items: center;
+        margin-left:0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    }
+    &__blok_imagen{
+        width: 65%;
+        @include Small{
+            width: 100%;
+    }
+        @include Medium{
+            width: 100%;
+    }
+        @include Large{
+            width: 100%;
+    }
+    }
+    &__imagen{
+        width: 100%;
+    }
+    &__titulo{
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 600;
+        width: 400px;
+        @include Small{
+            font-weight: 400;
+    }
+        @include Medium{
+            font-weight: 400;
+    }
+        @include Large{
+            font-weight: 400;
+    }
+    }
+    &__subtitulo{
+        color:white;
+        font-family: 'Open Sanf';
+        margin-top: 35px;
+        width: 405px;
+        
+    }
+    &__sub_block{
+        width: 100%;
+    }
+    &__btn{
+        background-color: white;
+        border-color: $violeta;
+        border-radius: 30px;
+        color: $violeta;
+        height: 45px;
+        margin-top: 30px;
+        width: 160px;
+       
+    }
+    
+}
+button:active {
+    background-color: $magenta;
+}
